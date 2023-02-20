@@ -150,20 +150,40 @@ a {
 
 /* icon */
 .icon {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .icon--primary {
-    fill:var(--color-primary);
+  fill: var(--color-primary);
 }
 
 .icon-container {
-    background: #f3f9fa;
-    width:64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input */
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: var(--color-headings);
+  font-size: 2rem;
+  outline: 0;
+  padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }
