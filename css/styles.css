@@ -5,6 +5,7 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+
 /* Typography */
 
 html {
@@ -58,6 +59,7 @@ p {
 }
 
 /* Links */
+
 a {
   text-decoration: none;
 }
@@ -83,4 +85,37 @@ a {
   .link-arrow {
     font-size: 1.5rem;
   }
+}
+
+/* Badges */
+
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap; /* 避免换行 */
+}
+
+.badge--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.badge--small {
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge--small {
+        font-size: 1.2rem;
+    }
 }
